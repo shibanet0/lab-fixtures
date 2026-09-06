@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- lab-fixtures: the active-content hazards the sanitizer strips, in one file. -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:s="http://www.w3.org/2000/svg"
+     width="128" height="128" viewBox="0 0 128 128">
+  <title>Sanitizer hazard panel</title>
+  <rect width="128" height="128" fill="#eef2ee"
+        onload="hazard()" onclick="hazard()" onmouseover="hazard()"/>
+  <script>hazard()</script>
+  <s:script>hazard()</s:script>
+  <foreignObject x="4" y="4" width="60" height="24">
+    <div xmlns="http://www.w3.org/1999/xhtml">html escape hatch</div>
+  </foreignObject>
+  <s:foreignObject x="4" y="32" width="60" height="24">
+    <div xmlns="http://www.w3.org/1999/xhtml">prefixed escape hatch</div>
+  </s:foreignObject>
+  <a xlink:href="javascript:hazard()"><text x="8" y="72">xlink js</text></a>
+  <a href="java&#9;script:hazard()"><text x="8" y="86">tab js</text></a>
+  <a href="https://example.invalid/exfil"><text x="8" y="100">external</text></a>
+  <image href="//example.invalid/x.png" x="8" y="104" width="12" height="12"/>
+  <a href="data:text/html;base64,PHA+aGF6YXJkPC9wPg=="><text x="8" y="118">data html</text></a>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+M8AAAMBAQDJ/pLvAAAAAElFTkSuQmCC"
+         x="112" y="112" width="12" height="12"/>
+  <circle cx="96" cy="40" r="24" fill="#2f7d54"/>
+</svg>

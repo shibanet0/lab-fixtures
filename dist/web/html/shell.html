@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lab-fixtures shell</title>
+    <!-- ordinary comment #1: the minifier must drop this one -->
+    <style>
+      :root {
+        --ink: #14201a;
+      }
+      body {
+        margin: 0px;
+        color: var(--ink);
+        font-family: system-ui, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--   __ENV__   -->
+    <main   id="root">
+        <h1>lab-fixtures</h1>
+        <!-- ordinary comment #2: after the marker, also dropped -->
+        <p>Static shell for runtime ENV injection.</p>
+    </main>
+    <script>
+      const el = document.getElementById("root");
+      const env = window.__env || {};
+      el.dataset.env = JSON.stringify(env);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+{
+  "Disable": {},
+  "Exclude": ["^dist/", "^SHA256SUMS$"]
+}

@@ -1,0 +1,5 @@
+# dist/ holds content-addressed masters: a reformat changes a sha256 and breaks every address a
+# downstream project publishes. Scoped rather than `*`, because oxfmt honours this file too and
+# still has to format the repository's own configs.
+/dist/
+/SHA256SUMS

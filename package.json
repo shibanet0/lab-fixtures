@@ -1,0 +1,42 @@
+{
+  "name": "lab-fixtures",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Self-generated CC0 test and demo fixtures with stable content-addressed bytes.",
+  "keywords": [
+    "fixtures",
+    "test-assets",
+    "cc0",
+    "images",
+    "media"
+  ],
+  "homepage": "https://github.com/shibanet0/lab-fixtures#readme",
+  "bugs": {
+    "url": "https://github.com/shibanet0/lab-fixtures/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shibanet0/lab-fixtures.git"
+  },
+  "license": "CC0-1.0",
+  "author": "Alexander Svinarev <shibanet0@gmail.com> (shibanet0.com)",
+  "type": "module",
+  "scripts": {
+    "codegen": "./src/generate.sh",
+    "test": "./src/generate.sh --check"
+  },
+  "devDependencies": {
+    "@shibanet0/datamitsu-config": "catalog:"
+  },
+  "packageManager": "pnpm@11.5.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "warn",
+      "version": ">=26.3.0"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "note": "Filed as kind=raw: these exact bytes are the point.",
+  "orderedKeys": ["z", "a", "m"],
+  "amount": "1.50",
+  "signature": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+}

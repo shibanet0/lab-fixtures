@@ -1,0 +1,13 @@
+{
+  "name": "lab-fixtures demo config",
+  "schema": "https://shibanet0.github.io/lab-fixtures/config.schema.json",
+  "featureFlags": {
+    "newNav": true,
+    "beta": false
+  },
+  "retries": 3,
+  "timeoutSeconds": 1.50,
+  "banner": "<b>Hello</b> & welcome",
+  "locales": ["en", "ja", "es"],
+  "empty": null
+}

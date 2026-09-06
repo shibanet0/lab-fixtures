@@ -1,0 +1,5 @@
+{
+  "generator": "lab-fixtures working file",
+  "layers": ["Background", "Mark", "Dot"],
+  "note": "This file sits inside a .files/ directory and must never be collected as an asset."
+}

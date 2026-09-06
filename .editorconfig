@@ -1,0 +1,22 @@
+root = true
+
+[*]
+charset                  = utf8
+end_of_line              = lf
+indent_size              = 2
+insert_final_newline     = true
+trim_trailing_whitespace = true
+
+[GNUmakefile]
+indent_size  = 2
+indent_style = tab
+
+[Makefile]
+indent_size  = 2
+indent_style = tab
+
+# Generated fixtures are byte-addressed masters. Preserve their exact contents.
+[dist/**]
+end_of_line              = lf
+insert_final_newline     = false
+trim_trailing_whitespace = false

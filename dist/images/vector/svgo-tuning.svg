@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- lab-fixtures: this comment survives only with removeComments turned off -->
+  <g opacity="1">
+    <g fill="#2f7d54">
+      <g stroke="none">
+        <g>
+          <path d="M6.123456 6.987654 L27.111111 6.987654 L27.111111 27.222222 L6.123456 27.222222 Z"/>
+          <path d="M36.876544 36.012346 L57.888889 36.012346 L57.888889 57.777778 L36.876544 57.777778 Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

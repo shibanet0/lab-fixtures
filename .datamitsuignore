@@ -1,0 +1,5 @@
+**/*: actionlint, bearer, cspell, grype, harper-cli, knip, lychee, osv-scanner, tflint, trivy, trufflehog, typos, vale
+
+# dist/ holds content-addressed masters; no tool may touch them.
+dist/**: *
+SHA256SUMS: *
